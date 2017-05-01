@@ -24,5 +24,7 @@
 
 **9-easter_egg.py:** prints "The Zen of Python", by TimPeters, followed by a new line
 
+**100-write.py:** prints exactly `and that piece of art is useful - Dora Korpar, 2015-10-19`, followed by a new line to `stderr` with exit status code `1`
+
 ## Author
 *Carrie Ybay* - [Twitter](http://twitter.com/hicarrie_)
