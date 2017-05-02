@@ -11,6 +11,6 @@ if last == 0:
 elif last > 5:
     print('Last digit of ' + '{:d}'.format(number) + ' is '
           + '{:d}'.format(last) + ' and is greater than 5')
-elif last < 6:
+else:
     print('Last digit of ' + '{:d}'.format(number) + ' is '
           + '{:d}'.format(last) + ' and is less than 6 and not 0')
