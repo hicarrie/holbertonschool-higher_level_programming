@@ -2,6 +2,5 @@
 def print_sorted_dictionary(my_dict):
     if my_dict is None:
         return
-    sorted(my_dict)
-    for k, v in my_dict.items():
+    for k, v in sorted(my_dict.items()):
         print("{}: {}".format(k, v))
