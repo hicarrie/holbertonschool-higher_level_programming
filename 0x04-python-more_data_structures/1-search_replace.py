@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
+    if my_list is None:
+        return
     new_list = []
     change = lambda match: True if x == search else False
     for x in my_list:
