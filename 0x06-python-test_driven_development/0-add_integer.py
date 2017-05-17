@@ -20,7 +20,3 @@ def add_integer(a, b):
         raise TypeError("b must be an integer")
 
     return int(a) + int(b)
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
