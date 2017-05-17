@@ -18,6 +18,12 @@ def matrix_divided(matrix, div):
     if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
 
+    """Checks if row is a list"""
+    for row in matrix:
+        if type(row) is not list:
+            raise TypeError("matrix must be a matrix (list of lists) "
+                            "of integers/floats")
+
     """Checks length of matrix rows"""
     for row in matrix:
         if len(row) != len(matrix[0]):
