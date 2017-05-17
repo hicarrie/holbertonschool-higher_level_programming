@@ -10,6 +10,10 @@ def matrix_divided(matrix, div):
     and return results in new matrix
     """
 
+    """Checks if div exists"""
+    if div is None:
+        raise TypeError("div must be a number")
+
     """Checks for 0 division"""
     if div == 0:
         raise ZeroDivisionError("division by zero")
