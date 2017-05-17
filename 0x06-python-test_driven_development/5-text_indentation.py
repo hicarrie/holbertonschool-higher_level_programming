@@ -19,7 +19,11 @@ def text_indentation(text):
     if "." not in text and "?" not in text and ":" not in text:
         print("{}".format(text))
     else:
-        new_text = text.replace(". ", ".\n\n")
-        new_text = new_text.replace("? ", "?\n\n")
-        new_text = new_text.replace(": ", ":\n\n")
+        new_text = text.replace(". ", ".")
+        new_text = new_text.replace("? ", "?")
+        new_text = new_text.replace(": ", ":")
+        new_text = new_text.replace(".", ".\n\n")
+        new_text = new_text.replace("?", "?\n\n")
+        new_text = new_text.replace(":", ":\n\n")
+        " ".join(new_text.split())
         print("{}".format(new_text), sep="", end="")
