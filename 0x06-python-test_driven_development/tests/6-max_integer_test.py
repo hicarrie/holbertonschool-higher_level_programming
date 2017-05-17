@@ -26,13 +26,11 @@ class TestMaxInteger(unittest.TestCase):
 
     @unittest.expectedFailure
     def test_notarray(self):
-        with self.assertRaises(ValueError):
-            self.assertFalse(all(isinstance(item, int) for item in ["Hello"]))
+        self.assertEqual(max_integer(["hello"], "broken"))
 
     @unittest.expectedFailure
     def test_emptylist(self):
-        with self.assertRaises(TypeError):
-            self.assertIsNone(max_integer())
+        self.assertEqual(max_integer())
 
 if __name__ == '__main__':
     unittest.main()
