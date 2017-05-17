@@ -57,3 +57,9 @@ Print an integer:
 Print text that has no ., ?, or ::
       >>> text_indentation("Holberton School")
       Holberton School
+
+Print text that has . but no space after:
+      >>> text_indentation("Holberton.School")
+      Holberton.
+      <BLANKLINE>
+      School
