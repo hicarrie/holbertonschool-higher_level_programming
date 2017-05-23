@@ -42,7 +42,7 @@ class Square:
             x = self.position[0]
             y = self.position[1]
             for i in range(y):
-                print(" ")
+                print("")
             for row in range(self.size):
                 for j in range(x):
                     print(" ", end="")
