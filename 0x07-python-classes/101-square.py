@@ -12,7 +12,7 @@ class Square:
 
     """ defines repr """
     def __repr__(self):
-        return repr(self.my_print())
+        return self.my_print()
 
     @property
     def size(self):
@@ -57,3 +57,23 @@ class Square:
     """ returns area of the square """
     def area(self):
         return self.size ** 2
+
+    """ prints square with # """
+    def __str__(self):
+        square = []
+        if self.__size == 0:
+            return "\n"
+        else:
+            x = self.position[0]
+            y = self.position[1]
+            for i in range(y):
+                square.append("\n")
+            for row in range(self.size):
+                for j in range(x):
+                    square.append(" ")
+                for col in range(self.size):
+                    square.append("#")
+                if row < self.__size - 1:
+                    square.append("\n")
+        square = "".join(square)
+        return square
