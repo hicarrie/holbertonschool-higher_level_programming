@@ -1,0 +1,31 @@
+=======================
+``square`` class
+=======================
+
+Usage of class ``square``:
+Defines class ``square`` with size attributes
+-------------------
+
+Import:
+    >>> Square = __import__('4-square').Square
+
+Sets square with size Square(89):
+    >>> my_square = Square(89)
+    >>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+    Area: 7921 for size: 89
+
+Sets square with size 3:
+    >>> my_square.size = 3
+    >>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+    Area: 9 for size: 3
+
+Sets square with size 5 feet:
+    >>> my_square.size = "5 feet"
+    Traceback (most recent call last):
+    	      ...
+    TypeError: size must be an integer
+
+Sets square with no argument:
+    >>> my_square = Square()
+    >>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+    Area: 0 for size: 0
