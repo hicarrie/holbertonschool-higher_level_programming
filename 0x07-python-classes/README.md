@@ -9,7 +9,7 @@
 - All test files must be .txt files
 - All test files must be executed using `python3 -m doctest ./tests/*`
 - All modules should have a documentation `python3 -c 'print(__import__("my_module").__doc__)'`
-- All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
+- All your classes should have a documentation `(python3 -c 'print(__import__("my_module").MyClass.__doc__)')`
 - All functions should have a documentation `python3 -c 'print(__import__("my_module").my_function.__doc__)'`
 
 ## File Descriptions
