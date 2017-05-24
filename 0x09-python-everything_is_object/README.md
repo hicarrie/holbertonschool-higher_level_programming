@@ -79,7 +79,8 @@
 
 **26-answer.txt:** What does this script print? `a = () b = () a is b`
 
-**27-answer.txt:** Will the last line of this script print 139926795932424? Answer with Yes or No. 
+**27-answer.txt:** Will the last line of this script print 139926795932424? Answer with Yes or No.
+
     >>> id(a)
     139926795932424
     >>> a
@@ -87,7 +88,8 @@
     >>> a = a + [5]
     >>> id(a)
 
-**28-answer.txt:** Will the last line of this script print 139926795932424? Answer with Yes or No. 
+**28-answer.txt:** Will the last line of this script print 139926795932424? Answer with Yes or No.
+
     >>> a
     [1, 2, 3]
     >>> id (a)
