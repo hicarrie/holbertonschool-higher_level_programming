@@ -21,9 +21,30 @@ Print str:
     	      ...
     TypeError: string must be an integer
 
+Print bool:
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("bool", True)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: bool must be an integer
+
+Pass None type:
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("none", None)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: none must be an integer
+
 Print list of integers:
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("list", [1, 2, 3])
+    Traceback (most recent call last):
+    	      ...
+    TypeError: list must be an integer
+
+Print set of integers:
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("list", {1, 2, 3})
     Traceback (most recent call last):
     	      ...
     TypeError: list must be an integer
@@ -58,7 +79,22 @@ Pass only one argument:
 
 Pass only one argument:
     >>> bg = BaseGeometry()
+    >>> bg.integer_validator(10,)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Pass only one argument:
+    >>> bg = BaseGeometry()
     >>> bg.integer_validator("integer")
     Traceback (most recent call last):
     	      ...
     TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+
+Test area:
+     >>> bg = BaseGeometry()
+     >>> bg.area()
+     Traceback (most recent call last):
+     	       ...
+     Exception: area() is not implemented
