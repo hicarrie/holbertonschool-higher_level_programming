@@ -4,9 +4,6 @@ Defines class Student
 """
 
 
-import json
-
-
 class Student:
     """ initializes instance """
     def __init__(self, first_name, last_name, age):
@@ -18,9 +15,10 @@ class Student:
         """ function that returns dictionary description with simple
         data structure for JSON serialization of an object """
         if attrs is None:
-            json_obj = json.dumps(self.__dict__)
-            return json.loads(json_obj)
+            return self.__dict__
         else:
-            # should return given attributes in dict format :(
-            json_obj = json.dumps(self.__dict__)
-            return json.loads(json_obj)
+            new_dict = {}
+            for item in attrs:
+                if hasattr(self, item):
+                    new_dict[item] = getattr(self, item)
+            return new_dict
