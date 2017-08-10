@@ -19,7 +19,7 @@ if __name__ == "__main__":
                          passwd=passwd, db=database)
     cur = db.cursor()
 
-    sql_cmd = "SELECT * FROM states WHERE name='{}' ORDER BY id".format(name)
+    sql_cmd = "SELECT * FROM states WHERE name='{}' ORDER BY id;".format(name)
     cur.execute(sql_cmd)
     states = cur.fetchall()
     for state in states:
