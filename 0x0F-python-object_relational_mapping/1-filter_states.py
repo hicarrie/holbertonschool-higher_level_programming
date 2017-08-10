@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Module for script that lists all states from database hbtn_0e_0_usa
+Module for script that lists all states starting with N
+from database hbtn_0e_0_usa
 """
 
 
@@ -17,8 +18,7 @@ if __name__ == "__main__":
                          passwd=passwd, db=database)
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states WHERE states.name\
-                LIKE 'N%' ORDER BY states.id;")
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id;")
     states = cur.fetchall()
     for state in states:
         print(state)
