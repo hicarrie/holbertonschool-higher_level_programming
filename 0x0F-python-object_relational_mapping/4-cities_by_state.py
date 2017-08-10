@@ -21,7 +21,7 @@ if __name__ == "__main__":
     sql_cmd = "SELECT cities.id, cities.name, states.name FROM cities, states\
                WHERE cities.state_id=states.id ORDER BY cities.id"
     cur.execute(sql_cmd)
-    states = cur.fetchall()
+    cities = cur.fetchall()
     for city in cities:
         print(city)
     cur.close()
