@@ -19,8 +19,8 @@ if __name__ == "__main__":
                          passwd=passwd, db=database)
     cur = db.cursor()
 
-    sql_cmd = "SELECT cities.name FROM cities WHERE cities.state_id=(SELECT\
-              id FROM states WHERE name='{}' ORDER BY cities.id".format(state,)
+    sql_cmd = "SELECT cities.name FROM cities WHERE cities.state_id=(SELECT id\
+              FROM states WHERE name='{}') ORDER BY cities.id".format(state,)
     cur.execute(sql_cmd)
     cities = cur.fetchall()
     separator = ""
