@@ -20,8 +20,6 @@ class State(Base):
                 primary_key=True)
     name = Column(String(128), nullable=False)
 
-    city = relationship("City")
-
     def __str__(self):
         """ defines __str__ attribute """
         return "{}".format(self.name)
