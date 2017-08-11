@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Module for script that lists all State objects with SQLAlchemy
+Module for script that prints the State object
+with the name passed as an argument
 """
 
 
