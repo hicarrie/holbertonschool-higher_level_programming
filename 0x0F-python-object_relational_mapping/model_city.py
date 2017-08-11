@@ -19,7 +19,7 @@ class City(Base):
     state_id = Column("state_id", Integer, ForeignKey("states.id"),
                       nullable=False)
 
-    state = relationship("State", back_populates="city")
+    state = relationship("State")
 
     def __str__(self):
         """ defines __str__ attribute """

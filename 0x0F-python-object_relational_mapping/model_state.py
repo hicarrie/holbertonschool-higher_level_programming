@@ -20,7 +20,7 @@ class State(Base):
                 primary_key=True)
     name = Column("name", String(128), nullable=False)
 
-    city = relationship("City", back_populates="state")
+    city = relationship("City")
 
     def __str__(self):
         """ defines __str__ attribute """
