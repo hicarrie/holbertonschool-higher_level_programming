@@ -16,9 +16,9 @@ class State(Base):
     """ defines State class """
 
     __tablename__ = "states"
-    id = Column("id", Integer, autoincrement=True, nullable=False,
+    id = Column(Integer, autoincrement=True, nullable=False,
                 primary_key=True)
-    name = Column("name", String(128), nullable=False)
+    name = Column(String(128), nullable=False)
 
     city = relationship("City")
 
