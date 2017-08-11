@@ -28,5 +28,6 @@ if __name__ == "__main__":
         print(separator, end="")
         print(city[0], end="")
         separator = ", "
+    print()
     cur.close()
     db.close()
