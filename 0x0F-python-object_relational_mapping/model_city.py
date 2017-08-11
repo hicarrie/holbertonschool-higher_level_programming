@@ -10,7 +10,7 @@ from model_state import Base, State
 
 
 class City(Base):
-    """ defines CIty class """
+    """ defines City class """
 
     __tablename__ = "cities"
     id = Column("id", Integer, autoincrement=True, nullable=False,
