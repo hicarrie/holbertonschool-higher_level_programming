@@ -10,6 +10,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
 if __name__ == "__main__":
+    name = sys.argv[4]
     host = "localhost"
     port = 3306
     user = sys.argv[1]
