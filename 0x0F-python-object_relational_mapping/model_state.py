@@ -17,3 +17,7 @@ class State(Base):
     __tablename__ = "states"
     id = Column(Integer, autoincrement=True, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
+
+    def __str__(self):
+        """ defines __str__ attribute """
+        return "{}".format(self.name)
