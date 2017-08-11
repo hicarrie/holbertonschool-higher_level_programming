@@ -24,5 +24,5 @@ if __name__ == "__main__":
     session = Session()
 
     state = session.query(State).order_by(State.id).first()
-    print("1: {}".format(str(state)))
+    print("{}: {}".format(state.id, str(state)))
     session.close()
