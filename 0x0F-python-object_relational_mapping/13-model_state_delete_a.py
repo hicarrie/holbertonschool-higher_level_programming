@@ -23,7 +23,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    session.query(State).filter(state.name.contains('%a%')).delete(
+    session.query(State).filter(State.name.contains('%a%')).delete(
         synchronize_session='fetch')
     session.commit()
     session.close()
