@@ -10,4 +10,4 @@ if __name__ == "__main__":
     data = data.encode('utf8')
     req = urllib.request.Request(sys.argv[1], data)
     with urllib.request.urlopen(req) as response:
-        print(response.read())
+        print(response.read().decode('utf8'))
