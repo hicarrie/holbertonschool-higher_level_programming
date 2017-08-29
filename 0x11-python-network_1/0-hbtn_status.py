@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# Fetches https://intranet.hbtn.io/status with urllib
+"""
+Fetches https://intranet.hbtn.io/status with urllib
+"""
 
 
 import urllib.request
