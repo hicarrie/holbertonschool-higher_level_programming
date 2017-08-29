@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# Sends a request to a URL and displays the body of the response
+# Sends a POST request to a URL with an email
+# and displays the body of the response
 
 import sys
 import requests
