@@ -13,4 +13,4 @@ if __name__ == "__main__":
     try:
         print(r.headers['X-Request-Id'])
     except:
-        return
+        pass
