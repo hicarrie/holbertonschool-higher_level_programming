@@ -15,3 +15,6 @@
 - 0x0B - Python - Input / Output
 - 0x0D - SQL - Introduction
 - 0x0E - SQL - More Queries
+- 0x0F - Python - Object Relational Mapping
+- 0x10 - Python - Network #0
+- 0x11 - Python - Network #1
