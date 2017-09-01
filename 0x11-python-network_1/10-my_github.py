@@ -11,4 +11,7 @@ if __name__ == "__main__":
     pwd = sys.argv[2]
     r = requests.get(url, auth=(user, pwd))
     r_json = r.json()
-    print(r_json.get('id'))
+    if len(j_son) == 0:
+        print("None")
+    else:
+        print(r_json.get('id'))
