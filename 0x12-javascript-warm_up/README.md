@@ -13,10 +13,9 @@
 - The third line: "Javascript is amazing"
 
 **2-arguments.js:** a script that prints a message depending of the number of arguments passed:
-
-    If no arguments are passed to the script, print "No argument"
-    If only one argument is passed to the script, print "Argument found"
-    Otherwise, print "Arguments found"
+- If no arguments are passed to the script, print "No argument"
+- If only one argument is passed to the script, print "Argument found"
+- Otherwise, print "Arguments found"
 
 **3-value_argument.js:** a script that prints the first argument passed to it
 
@@ -37,6 +36,7 @@
 **11-second_biggest.js:** a script that searches the second biggest integer in the list of arguments
 
 **12-object.js:** update this script to replace the value 12 with 89
+
     #!/usr/bin/node
     const myObject = {
       type: 'object',
