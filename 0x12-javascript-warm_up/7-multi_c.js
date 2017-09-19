@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // prints 'C is fun' x times
-let number = parseInt(process.argv[2]);
+const number = parseInt(process.argv[2]);
 if (Number.isNaN(number)) {
   console.log('Missing number of occurrences');
 } else {
