@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// class that defines a square and inherits from Rectangle
+// class that defines a square and inherits from Square
 const Square = require('./5-square').Square;
 
 Square.prototype = Object.create(Square.prototype);
