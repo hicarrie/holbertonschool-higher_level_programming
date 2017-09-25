@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// empty class that defines a rectangle
+// class that defines a rectangle
 function Rectangle (w, h) {
   this.width = w;
   this.height = h;
