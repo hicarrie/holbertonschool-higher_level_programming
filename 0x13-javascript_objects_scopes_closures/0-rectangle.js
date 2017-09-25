@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // empty class that defines a rectangle
-function Rectangle() {
+function Rectangle () {
 
 }
 
