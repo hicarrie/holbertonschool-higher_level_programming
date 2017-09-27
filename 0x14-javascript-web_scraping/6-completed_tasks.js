@@ -17,7 +17,9 @@ request(url, function (error, response, body) {
     	  count++;
     	}
       }
-      count_dict[i] = count;
+      if (count > 0) {
+	count_dict[i] = count;
+      }
     }
     console.log(count_dict);
   }
