@@ -9,18 +9,18 @@ request(url, function (error, response, body) {
   } else {
     const data = JSON.parse(body);
     const length = data.length;
-    let count_dict = {}
+    let countDict = {};
     for (let i = 1; i <= 10; i++) { // loop through every userId
       let count = 0;
       for (let j = 0; j < length; j++) { // loop through every todo item
-    	if (data[j].userId === i && data[j].completed === true) {
-    	  count++;
-    	}
+        if (data[j].userId === i && data[j].completed === true) {
+          count++;
+        }
       }
       if (count > 0) {
-	count_dict[i] = count;
+        countDict[i] = count;
       }
     }
-    console.log(count_dict);
+    console.log(countDict);
   }
 });
