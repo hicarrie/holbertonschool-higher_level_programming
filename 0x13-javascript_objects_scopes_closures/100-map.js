@@ -6,4 +6,5 @@ const factors = list.map(function (x, i) {
   return x * i;
 });
 
+console.log(list);
 console.log(factors);
