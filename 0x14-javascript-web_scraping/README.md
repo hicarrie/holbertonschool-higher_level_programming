@@ -43,5 +43,11 @@
 - The first argument is the API URL: `https://jsonplaceholder.typicode.com/todos`
 - You must use the module `request`
 
+**100-starwars_characters.js:** a script that prints all characters of a Star Wars movie
+- The first argument is the Movie ID - example: `3` = "Return of the Jedi"
+- Display one character name by line
+- You must use the Star Wars API
+- You must use the module `request`
+
 ## Author
 *Carrie Ybay* - [Twitter](http://twitter.com/hicarrie_)
