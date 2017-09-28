@@ -18,3 +18,6 @@
 - 0x0F - Python - Object Relational Mapping
 - 0x10 - Python - Network #0
 - 0x11 - Python - Network #1
+- 0x12 - Javascript - Warm Up
+- 0x13 - Javascript - Objects, Scopes, Closures
+- 0x14 - Javascript - Web Scraping
