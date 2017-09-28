@@ -55,5 +55,10 @@
 - Can't use `document.querySelector` to select the HTML tag
 - Must use the jQuery API You script must be work when it imported from the `HEAD` tag
 
+**100-script.js:** a Javascript script that updates the text color of the HTML tag `HEADER` to red (`#FF0000`)
+- Must use `document.querySelector` to select the HTML tag
+- Can't use the jQuery API
+- Must be work when it imported from the `HEAD` tag
+
 ## Author
 *Carrie Ybay* - [Twitter](http://twitter.com/hicarrie_)
