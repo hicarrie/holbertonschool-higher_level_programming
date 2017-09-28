@@ -1,5 +1,5 @@
 # High Level Programming
-### Beginning Python and SQL Projects
+### Beginning Python, SQL, Javascript Projects
 
 - 0x00 - Python - Hello, World
 - 0x01 - Python - If / Else, Loops, Functions
